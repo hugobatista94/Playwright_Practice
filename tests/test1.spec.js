@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { abrirSite, visualizarHome, clicarListaDeDesejos } = require('../Pages/test1Page.js');
+const { abrirSite, visualizarHome, clicarListaDeDesejos , clicarMinhaConta } = require('../Pages/test1Page.js');
 
 
 test('Verificar navegação', async ({ page }) => {
@@ -8,4 +8,10 @@ test('Verificar navegação', async ({ page }) => {
   await clicarListaDeDesejos(page);
  
 });
+
+test ('minha conta', async ({ page }) => {
+  await abrirSite(page);
+  await visualizarHome(page);
+  await clicarMinhaConta(page);
+}); 
 
