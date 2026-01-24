@@ -19,11 +19,6 @@ const clicarListaDeDesejos = async (page) => {
 
 };
 
-const clicarMinhaConta = async (page) => {
-    await page.locator('#tbay-header').getByTitle('Login').click();
-    await expect(page.getByRole('heading', { name: 'Login' })).toBeVisible();
-};
 
 
-
-module.exports = { abrirSite, visualizarHome, clicarListaDeDesejos, clicarMinhaConta};
+module.exports = { abrirSite, visualizarHome, clicarListaDeDesejos};

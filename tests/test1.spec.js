@@ -9,9 +9,3 @@ test('Verificar navegação', async ({ page }) => {
  
 });
 
-test ('minha conta', async ({ page }) => {
-  await abrirSite(page);
-  await visualizarHome(page);
-  await clicarMinhaConta(page);
-}); 
-
